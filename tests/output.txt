@@ -1,0 +1,140 @@
+Tokens:
+Token: START (Type: KEYWORD)
+Token: FUNCTION (Type: KEYWORD)
+Token: factorial (Type: IDENTIFIER)
+Token: ( (Type: OPERATOR)
+Token: n (Type: IDENTIFIER)
+Token: ) (Type: OPERATOR)
+Token: IF (Type: KEYWORD)
+Token: n (Type: IDENTIFIER)
+Token: == (Type: OPERATOR)
+Token: 0 (Type: NUMBER)
+Token: THEN (Type: IDENTIFIER)
+Token: RETURN (Type: KEYWORD)
+Token: 1 (Type: NUMBER)
+Token: ELSE (Type: KEYWORD)
+Token: RETURN (Type: KEYWORD)
+Token: n (Type: IDENTIFIER)
+Token: * (Type: OPERATOR)
+Token: factorial (Type: IDENTIFIER)
+Token: ( (Type: OPERATOR)
+Token: n (Type: IDENTIFIER)
+Token: - (Type: OPERATOR)
+Token: 1 (Type: NUMBER)
+Token: ) (Type: OPERATOR)
+Token: ENDIF (Type: IDENTIFIER)
+Token: END (Type: KEYWORD)
+Token: x (Type: IDENTIFIER)
+Token: = (Type: OPERATOR)
+Token: 5 (Type: NUMBER)
+Token: y (Type: IDENTIFIER)
+Token: = (Type: OPERATOR)
+Token: 10.5 (Type: NUMBER)
+Token: name (Type: IDENTIFIER)
+Token: = (Type: OPERATOR)
+Token: Compiler (Type: STRING)
+Token: PRINT (Type: KEYWORD)
+Token: Factorial of (Type: STRING)
+Token: , (Type: OPERATOR)
+Token: x (Type: IDENTIFIER)
+Token: , (Type: OPERATOR)
+Token: is (Type: STRING)
+Token: , (Type: OPERATOR)
+Token: factorial (Type: IDENTIFIER)
+Token: ( (Type: OPERATOR)
+Token: x (Type: IDENTIFIER)
+Token: ) (Type: OPERATOR)
+Token: IF (Type: KEYWORD)
+Token: y (Type: IDENTIFIER)
+Token: > (Type: OPERATOR)
+Token: 5 (Type: NUMBER)
+Token: AND (Type: KEYWORD)
+Token: name (Type: IDENTIFIER)
+Token: != (Type: OPERATOR)
+Token: Lexer (Type: STRING)
+Token: THEN (Type: IDENTIFIER)
+Token: PRINT (Type: KEYWORD)
+Token: Condition met (Type: STRING)
+Token: ELSE (Type: KEYWORD)
+Token: PRINT (Type: KEYWORD)
+Token: Condition not met (Type: STRING)
+Token: ENDIF (Type: IDENTIFIER)
+Token: FOR (Type: KEYWORD)
+Token: i (Type: IDENTIFIER)
+Token: = (Type: OPERATOR)
+Token: 1 (Type: NUMBER)
+Token: TO (Type: IDENTIFIER)
+Token: 5 (Type: NUMBER)
+Token: STEP (Type: IDENTIFIER)
+Token: 1 (Type: NUMBER)
+Token: PRINT (Type: KEYWORD)
+Token: Loop iteration (Type: STRING)
+Token: , (Type: OPERATOR)
+Token: i (Type: IDENTIFIER)
+Token: NEXT (Type: IDENTIFIER)
+Token: WHILE (Type: KEYWORD)
+Token: x (Type: IDENTIFIER)
+Token: > (Type: OPERATOR)
+Token: 0 (Type: NUMBER)
+Token: PRINT (Type: KEYWORD)
+Token: x is (Type: STRING)
+Token: , (Type: OPERATOR)
+Token: x (Type: IDENTIFIER)
+Token: x (Type: IDENTIFIER)
+Token: = (Type: OPERATOR)
+Token: x (Type: IDENTIFIER)
+Token: - (Type: OPERATOR)
+Token: 1 (Type: NUMBER)
+Token: ENDWHILE (Type: IDENTIFIER)
+Token: PRINT (Type: KEYWORD)
+Token: End of program (Type: STRING)
+Token: END (Type: KEYWORD)
+Token: EOF (Type: END_OF_FILE)
+
+Abstract Syntax Tree (AST):
+Program: 
+  Expression: START
+  Expression: factorial
+  Expression: n
+  Expression: IF
+  Expression: ==
+  Expression: THEN
+  Expression: 1
+  Expression: RETURN
+  Expression: *
+  Expression: (
+  Expression: -
+  Expression: )
+  Expression: END
+  Expression: =
+  Expression: y
+  Expression: 10.5
+  Expression: =
+  PrintStatement: Factorial of
+  Expression: ,
+  Expression: ,
+  Expression: ,
+  Expression: (
+  Expression: )
+  Expression: y
+  Expression: 5
+  Expression: name
+  Expression: Lexer
+  PrintStatement: Condition met
+  Expression: ELSE
+  Expression: Condition not met
+  Expression: FOR
+  Expression: =
+  Expression: TO
+  Expression: STEP
+  PrintStatement: Loop iteration
+  Expression: ,
+  Expression: NEXT
+  Expression: x
+  Expression: 0
+  Expression: x is
+  Expression: x
+  Expression: =
+  Expression: -
+  Expression: ENDWHILE
+  Expression: End of program
