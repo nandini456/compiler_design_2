@@ -1,2 +1,6 @@
-VAR x = 10;
-PRINT(x);
+START
+STRUCT Person {
+  name;
+  age;
+}
+END

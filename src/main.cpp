@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>  // Include for file handling
 #include <sstream>  // For stringstream
+#include "parser.h"
 using namespace std;
 
 int main() {
@@ -35,5 +36,11 @@ int main() {
 
     cout << "Tokenization completed! Tokens saved to tests/tokens.txt" << endl;
     tokensFile.close();
+
+    Parser parser(tokens);
+    auto ast = parser.parse();
+
+    if (ast) std::cout << "Parsing successful!" << std::endl;
+    else std::cout << "Parsing failed!" << std::endl;
     return 0;
 }

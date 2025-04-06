@@ -1,8 +1,1 @@
 Generated IR (Three-Address Code):
-ADD t0, 5, 2
-MOV x, t0
-MUL t1, 6, 3
-MOV y, t1
-ADD t2, x, y
-MOV z, t2
-PRINT z

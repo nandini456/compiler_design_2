@@ -1,11 +1,12 @@
-VAR [0]
-x [1]
-= [7]
-10 [2]
-; [8]
-PRINT [0]
-( [8]
-x [1]
-) [8]
-; [8]
-EOF [9]
+Tokens:
+Token: START (Type: KEYWORD)
+Token: STRUCT (Type: KEYWORD)
+Token: Person (Type: IDENTIFIER)
+Token: { (Type: SEPARATOR)
+Token: name (Type: IDENTIFIER)
+Token: ; (Type: SEPARATOR)
+Token: age (Type: IDENTIFIER)
+Token: ; (Type: SEPARATOR)
+Token: } (Type: SEPARATOR)
+Token: END (Type: KEYWORD)
+Token: EOF (Type: END_OF_FILE)

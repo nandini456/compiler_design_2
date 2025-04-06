@@ -1,19 +1,5 @@
 AST Structure:
 Program: 
-  Assignment: =
-    Variable: x
-    Operator: +
-      Number: 5
-      Number: 2
-  Assignment: =
-    Variable: y
-    Operator: *
-      Number: 6
-      Number: 3
-  Assignment: =
-    Variable: z
-    Operator: +
-      Variable: x
-      Variable: y
-  PrintStatement: PRINT
-    Variable: z
+  StructDeclaration: Person
+    Field: name
+    Field: age
